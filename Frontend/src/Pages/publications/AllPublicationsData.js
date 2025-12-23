@@ -29,7 +29,7 @@ const AllPublicationsData = [
       year: 2024,
       title: "Biodiversity Conservation, Ecosystem Services and One Health",
       source: "Principles of One Health for a better planet (2024)",
-      authors: "Barry J. McMahon | Cyril Caminade | Daniele de Meneghi"
+      authors: "Kolade J. McMahon | Cyril Caminade | Daniele de Meneghi"
     },
     {
       id: 5,
