@@ -9,7 +9,7 @@ const publications = [
     source: "Cogent Education",
     authors:
       "Nor Fadzilah Abdullah | Sahar Heidary | Ili Hazwani Zulkifli | Asma Abu-Samah | Rozita Ibrahim | Nasrudin Subhi | Rosdiadee Nordin | Mehran Behjati | Marco Zennaro",
-    locked: false,
+    
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const publications = [
     source: "Eur.Phys.J.C",
     authors:
       "Aad, Georges | Aakvaag, Erlend | Abbott, Braden Keim | Abdelhameed, Sara | Abeling, Kira | ...",
-    locked: false,
+  
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const publications = [
     title: "Topological magic response in quantum spin chains",
     authors:
       "Ritu Nehra | Poettri Sonya Tarabunga | Martina Frau | Mario Collura | Emanuele Tirrito | Marcello Dalmonte",
-    locked: true,
+  
   },
   {
     id: 4,
@@ -40,7 +40,6 @@ const publications = [
     source: "Cogent Education",
     authors:
       "Nor Fadzilah Abdullah | Sahar Heidary | Ili Hazwani Zulkifli | Asma Abu-Samah | Rozita Ibrahim | Nasrudin Subhi | Rosdiadee Nordin | Mehran Behjati | Marco Zennaro",
-    locked: false,
   },
   {
     id: 5,
@@ -51,7 +50,7 @@ const publications = [
     source: "Eur.Phys.J.C",
     authors:
       "Aad, Georges | Aakvaag, Erlend | Abbott, Braden Keim | Abdelhameed, Sara | Abeling, Kira | ...",
-    locked: false,
+   
   },
   {
     id: 6,
@@ -60,7 +59,6 @@ const publications = [
     title: "Topological magic response in quantum spin chains",
     authors:
       "Ritu Nehra | Poettri Sonya Tarabunga | Martina Frau | Mario Collura | Emanuele Tirrito | Marcello Dalmonte",
-    locked: false,
   },
 ];
 

@@ -1,6 +1,8 @@
 import React from "react";
-import publications from "./publicationsData";
 import { useEffect, useState } from "react";
+import publications from "./publicationsData";
+import AllPublications from "./AllPublication";
+import AllPublicationsData from "./AllPublicationsData";
 
 import "./style.css";
 
@@ -27,25 +29,55 @@ const Publications = () => {
 
       updateCount();
     };
-  });
+    counters.forEach((counter) => animateCounter(counter));
+  }, []);
+  
   // JOURNAL CAROUSEL
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState('');
+  const [itemsPerView, setItemsPerView] = useState(3);
 
-  const visibleItems = publications.slice(currentIndex, currentIndex + 3);
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 768) {
+        setItemsPerView(1);
+      } else if (width <= 950) {
+        setItemsPerView(2);
+      } else {
+        setItemsPerView(3);
+      }
+    };
+    
+    handleResize(); // Call on mount
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const visibleItems = publications.slice(currentIndex, currentIndex + itemsPerView);
 
   const next = () => {
-    if (currentIndex + 3 < publications.length) {
-      setCurrentIndex((prev) => prev + 1);
+    if (currentIndex + itemsPerView < publications.length) {
+      setDirection('next');
+      setTimeout(() => {
+        setCurrentIndex((prev) => prev + 1);
+        setDirection('');
+      }, 50);
     }
   };
 
   const prev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex((prev) => prev - 1);
+      setDirection('prev');
+      setTimeout(() => {
+        setCurrentIndex((prev) => prev - 1);
+        setDirection('');
+      }, 50);
     }
   };
 
   return (
+    <>
     <main className="publications">
       <section
         className="pub-hero"
@@ -121,9 +153,9 @@ const Publications = () => {
         </div>
       </div>
 
-      {/* JOURNAL CARUSEL */}
+      {/* JOURNAL CAROUSEL */}
       <section className="pub-carousel">
-        <div className="pub-track">
+        <div className={`pub-track ${direction}`}>
           {visibleItems.map((item) => (
             <div className="pub-card" key={item.id}>
               <div className="pub-header">
@@ -166,7 +198,12 @@ const Publications = () => {
           </button>
         </div>
       </section>
+
+      <AllPublications publications={AllPublicationsData} />
+
     </main>
+    </>
+
   );
 };
 
