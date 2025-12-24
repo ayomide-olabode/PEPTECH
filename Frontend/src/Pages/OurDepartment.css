@@ -46,7 +46,7 @@
 
 .timeline-row {
   /* Relative is vital here so the icon anchors to this row */
-  @apply relative flex items-center w-full min-h-[150px];
+  @apply relative flex items-center w-full min-h-37.5;
 }
 
 /* Column logic to prevent scattering */
@@ -65,7 +65,7 @@
 .bracket-accent {
   border-top: 1px solid var(--color-gold);
   border-bottom: 1px solid var(--color-gold);
-  @apply absolute top-0 bottom-0 left-[-4px] w-1;
+  @apply absolute top-0 bottom-0 -left-1 w-1;
 }
 
 /* Center Icon - Locked to the center line */

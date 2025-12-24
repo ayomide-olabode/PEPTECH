@@ -47,8 +47,8 @@ const TimelineItem = ({ leader, isEven }) => {
       </div>
 
       {/* Mobile Year (Shown only on small screens) */}
-      <div className="md:hidden absolute top-[-30px] left-16">
-        <span className="text-[#d4af37] font-bold text-xl">{leader.year}</span>
+      <div className="md:hidden absolute -top-7.5 left-16">
+        <span className="text-gold font-bold text-xl">{leader.year}</span>
       </div>
     </div>
   );
