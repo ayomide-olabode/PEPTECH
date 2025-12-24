@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import publications from "./publicationsData";
 import AllPublications from "./AllPublication";
 import AllPublicationsData from "./AllPublicationsData";
+import Footer from "../../Components/footer/footer";
 
 import "./style.css";
 
@@ -93,8 +94,8 @@ const Publications = () => {
             </h1>
             <div className="pub-description">
               <p>
-                Explore our department's journals, papers, and research driving
-                scientific progress and innovation.
+                Explore our department's journals, papers, publications and research driving
+                scientific progress and innovation. 
               </p>
             </div>
           </div>
@@ -200,7 +201,7 @@ const Publications = () => {
       </section>
 
       <AllPublications publications={AllPublicationsData} />
-
+      <Footer/>
     </main>
     </>
 
