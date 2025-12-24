@@ -15,7 +15,6 @@ const Publications = () => {
     const animateCounter = (counter) => {
       const target = +counter.getAttribute("data-target");
       const speed = 500;
-
       const updateCount = () => {
         const current = +counter.innerText;
         const increment = Math.ceil(target / speed);
@@ -50,7 +49,7 @@ const Publications = () => {
       }
     };
     
-    handleResize(); // Call on mount
+    handleResize(); 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -145,7 +144,6 @@ const Publications = () => {
           </h3>
           <p>Publications</p>
         </div>
-
         <div className="status-item">
           <h3>
             <span data-target="25">0</span>+
@@ -163,14 +161,9 @@ const Publications = () => {
                 <span>{item.type}</span>
                 <span>{item.year}</span>
               </div>
-
               <h3 className="pub-title">{item.title}</h3>
-
               {item.source && <p className="pub-source">{item.source}</p>}
-
               <p className="pub-authors">{item.authors}</p>
-
-              {item.locked && <div className="pub-lock">🔒</div>}
             </div>
           ))}
         </div>

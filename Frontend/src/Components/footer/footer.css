@@ -107,9 +107,8 @@
   margin-top: 2rem;
 }
 
-/* ==========================
-     RESPONSIVE
-  ========================== */
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .footer-links-inner,
   .footer-bottom-inner {

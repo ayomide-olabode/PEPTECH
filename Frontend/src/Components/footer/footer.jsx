@@ -89,7 +89,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* SOCIALS */}
           <div className="footer-social">
             <h4>Social Media</h4>
             <div className="social-icons">

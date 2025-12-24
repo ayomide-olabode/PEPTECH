@@ -91,12 +91,6 @@ const AllPublications = ({ publications = [] }) => {
                 className="allpub-search-input"
               />
               <button className="allpub-search-btn">🔍</button>
-              {/* <button
-                className="allpub-search-clear"
-                onClick={handleClearSearch}
-              >
-                ✕
-              </button> */}
             </div>
           </div>
         </div>
