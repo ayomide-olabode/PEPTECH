@@ -82,7 +82,7 @@ const Navbar = () => {
       path: '/research',
       hasDropdown: true,
       submenu: [
-        { name: 'Publications', path: '/research/publications' },
+        { name: 'Publications', path: '/publications' },
       ]
     },
     // {
@@ -112,7 +112,7 @@ const Navbar = () => {
                 PEPESA Portal
               </a>
               <a
-                href="https://portal.oauife.edu.ng"
+                href="https://eportal.oauife.edu.ng/home.php"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 sm:px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 text-blue-950 text-xs sm:text-sm font-semibold rounded-lg hover:from-amber-400 hover:to-amber-500 transition-all duration-300 shadow-md hover:shadow-lg whitespace-nowrap"
@@ -135,9 +135,10 @@ const Navbar = () => {
             <div className="flex justify-between items-center h-16 lg:h-20">
               {/* Logo Section */}
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+                {/* <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
                   <span className="text-lg sm:text-xl font-bold text-blue-950">P</span>
-                </div>
+                </div> */}
+                  <img src="/images/peplogo.png" alt="" className='w-14 h-14'/>
                 <div className="hidden sm:block">
                   <h1 className="text-sm sm:text-base lg:text-lg font-bold text-white">
                     Department of Physics

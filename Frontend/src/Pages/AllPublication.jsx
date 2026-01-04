@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AllPublication.css";
+import "../CSS/AllPublication.css";
 
 const AllPublications = ({ publications = [] }) => {
   const [selectedYear, setSelectedYear] = useState("");

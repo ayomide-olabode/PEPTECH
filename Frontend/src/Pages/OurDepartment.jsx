@@ -1,5 +1,5 @@
 import React from "react";
-import "./OurDepartment.css";
+import "../CSS/OurDepartment.css";
 import avatar from "/avatar.jpg";
 import { leaders } from "../Components/leadersData";
 import TimelineItem from "../Components/TimelineItem";

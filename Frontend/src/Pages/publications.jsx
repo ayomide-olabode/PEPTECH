@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import publications from "./publicationsData";
+import publications from "../JS/publicationsData";
 import AllPublications from "./AllPublication";
-import AllPublicationsData from "./AllPublicationsData";
+import AllPublicationsData from "../JS/AllPublicationsData";
 
-import "./style.css";
+import "../CSS/style.css";
 
 const Publications = () => {
   // PUBLICATION COUND DOWN FUNCTIONS

@@ -85,9 +85,10 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-1 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-14 h-14 bg-gradient-to-br from-[#FFC527] to-[#ffb700] rounded-xl flex items-center justify-center shadow-2xl shadow-[#FFC527]/30">
-                  <FaAtom className="w-7 h-7 text-[#0c1e3d]" />
-                </div>
+                {/* <div className="w-14 h-14 bg-gradient-to-br from-[#FFC527] to-[#ffb700] rounded-xl flex items-center justify-center shadow-2xl shadow-[#FFC527]/30">
+                 
+                </div> */}
+                <img src="/images/peplogo.png" className='w-14 h-14' alt="" />
                 <div>
                   <h3 className="text-xl font-black text-white">Physics Dept.</h3>
                   <p className="text-xs text-[#FFC527] font-bold">OAU, Ile-Ife</p>
