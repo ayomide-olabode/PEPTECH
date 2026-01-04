@@ -4,152 +4,206 @@ const Spotlight = () => {
   const spotlightPeople = [
     {
       id: 1,
-      name: "Dr. Sarah Chen",
+      name: "Dr. Adebayo Okonkwo",
       achievement: "Breakthrough in Quantum Computing",
       description: "Led the team that achieved quantum supremacy with a 1000-qubit processor, opening new frontiers in computational science.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-      category: "Science & Technology"
+      category: "Quantum Physics"
     },
     {
       id: 2,
-      name: "Marcus Thompson",
+      name: "Prof. Chioma Nwankwo",
       achievement: "Revolutionary Clean Energy Solution",
       description: "Developed an affordable solar technology that increased efficiency by 300%, making renewable energy accessible to underserved communities.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      category: "Innovation"
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      category: "Applied Physics"
     },
     {
       id: 3,
-      name: "Prof. Amara Okafor",
-      achievement: "Educational Reform Pioneer",
-      description: "Transformed education for over 50,000 students through innovative STEM programs in developing regions.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
-      category: "Education"
+      name: "Dr. Ibrahim Musa",
+      achievement: "Nanotechnology Pioneer",
+      description: "Revolutionized materials science with breakthrough discoveries in nanoscale engineering and their applications in modern technology.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      category: "Materials Science"
     },
     {
       id: 4,
-      name: "Dr. James Rodriguez",
-      achievement: "Medical Innovation Excellence",
-      description: "Pioneered a new treatment protocol that reduced recovery time by 60% for critical cardiac patients.",
+      name: "Prof. Ngozi Adeyemi",
+      achievement: "Astrophysics Excellence",
+      description: "Pioneered new methods in stellar evolution research, contributing to our understanding of the universe's formation and development.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
+      category: "Astrophysics"
+    },
+    {
+      id: 5,
+      name: "Dr. Emeka Okafor",
+      achievement: "Medical Physics Innovation",
+      description: "Developed advanced imaging techniques that improved cancer detection rates by 85%, saving countless lives worldwide.",
       image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=400&fit=crop",
-      category: "Healthcare"
+      category: "Medical Physics"
+    },
+    {
+      id: 6,
+      name: "Prof. Fatima Yusuf",
+      achievement: "Computational Physics Leader",
+      description: "Advanced machine learning algorithms for complex physics simulations, accelerating research across multiple disciplines.",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop",
+      category: "Computational Physics"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a1628] via-[#1a2744] to-[#0a1628] relative overflow-hidden py-20 px-4">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-[#FFD700] opacity-5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#FFD700] opacity-5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFD700] opacity-3 rounded-full blur-3xl"></div>
+    <div className="min-h-screen relative overflow-hidden py-16 lg:py-24 px-4">
+      {/* Static Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628] via-[#0c1e3d] to-[#0f2847]">
+        {/* Layered gradient orbs */}
+        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-gradient-to-bl from-[#FFC527]/15 via-[#FFC527]/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#FFC527]/10 via-[#FFC527]/3 to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#0c1e3d]/80 via-[#FFC527]/5 to-[#0c1e3d]/80 rounded-full blur-3xl" />
       </div>
 
-      {/* Decorative grid pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjE1LDAsMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
+      {/* Geometric Pattern Overlay */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='none' stroke='%23FFC527' stroke-width='0.5' opacity='0.3'/%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }} />
+      </div>
+
+      {/* Grid overlay */}
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: `linear-gradient(#FFC527 1px, transparent 1px), linear-gradient(90deg, #FFC527 1px, transparent 1px)`,
+        backgroundSize: '80px 80px'
+      }} />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          <div className="inline-block mb-4">
-            <span className="text-[#FFD700] text-sm font-semibold tracking-widest uppercase px-4 py-2 bg-[#FFD700] bg-opacity-10 rounded-full border border-[#FFD700] border-opacity-30">
-              Excellence Recognized
-            </span>
+        <div className="text-center mb-16 lg:mb-20">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-[#FFC527]/90 to-[#ffb700]/90 backdrop-blur-xl rounded-full mb-8 shadow-2xl border-2 border-[#FFC527]/50 transform hover:scale-105 transition-transform duration-300">
+            <div className="w-2 h-2 bg-[#0c1e3d] rounded-full animate-pulse" />
+            <span className="text-sm font-black text-[#0c1e3d] tracking-widest uppercase">Excellence Recognized</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
-            In The <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD700] to-[#FFA500]">Spotlight</span>
+          
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight tracking-tight">
+            In The <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFC527] via-[#ffd45a] to-[#FFC527] drop-shadow-2xl">Spotlight</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Celebrating extraordinary individuals whose remarkable achievements have made a lasting impact on our world
+          
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium">
+            Celebrating extraordinary individuals whose remarkable achievements have made a lasting impact on the world of physics
           </p>
           
           {/* Decorative line */}
-          <div className="flex items-center justify-center mt-8 gap-4">
-            <div className="h-px w-24 bg-gradient-to-r from-transparent to-[#FFD700]"></div>
-            <div className="w-2 h-2 bg-[#FFD700] rounded-full"></div>
-            <div className="h-px w-24 bg-gradient-to-l from-transparent to-[#FFD700]"></div>
+          <div className="flex items-center justify-center mt-10 gap-4">
+            <div className="h-px w-20 sm:w-32 bg-gradient-to-r from-transparent to-[#FFC527]" />
+            <div className="w-3 h-3 bg-[#FFC527] rounded-full shadow-lg shadow-[#FFC527]/50" />
+            <div className="h-px w-20 sm:w-32 bg-gradient-to-l from-transparent to-[#FFC527]" />
           </div>
         </div>
 
-        {/* Spotlight Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {/* Spotlight Grid - 2 columns on mobile, 3 on larger screens */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12">
           {spotlightPeople.map((person, index) => (
             <div
               key={person.id}
-              className="group relative bg-gradient-to-br from-[#1a2744] to-[#0f1d35] rounded-2xl overflow-hidden border border-[#FFD700] border-opacity-20 hover:border-opacity-50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#FFD700]/20"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl rounded-2xl lg:rounded-3xl overflow-hidden border-2 border-[#FFC527]/20 hover:border-[#FFC527]/50 transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl hover:shadow-[#FFC527]/20"
             >
               {/* Gold accent corner */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#FFD700] to-transparent opacity-10 rounded-bl-full"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 lg:w-32 lg:h-32 bg-gradient-to-br from-[#FFC527]/20 to-transparent rounded-bl-full" />
               
-              <div className="p-8">
-                <div className="flex flex-col md:flex-row gap-6">
-                  {/* Image */}
-                  <div className="relative flex-shrink-0">
-                    <div className="w-32 h-32 rounded-2xl overflow-hidden ring-4 ring-[#FFD700] ring-opacity-30 group-hover:ring-opacity-60 transition-all duration-300">
-                      <img
-                        src={person.image}
-                        alt={person.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                    {/* Spotlight effect */}
-                    <div className="absolute -inset-2 bg-gradient-to-br from-[#FFD700] to-transparent opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-full"></div>
+              <div className="p-4 lg:p-8">
+                {/* Image */}
+                <div className="relative mb-4 lg:mb-6">
+                  <div className="w-full aspect-square rounded-xl lg:rounded-2xl overflow-hidden ring-2 lg:ring-4 ring-[#FFC527]/30 group-hover:ring-[#FFC527]/60 transition-all duration-300">
+                    <img
+                      src={person.image}
+                      alt={person.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                   </div>
+                  {/* Spotlight glow effect */}
+                  <div className="absolute -inset-2 bg-gradient-to-br from-[#FFC527]/30 to-transparent opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 rounded-full" />
+                </div>
 
-                  {/* Content */}
-                  <div className="flex-1">
-                    <div className="inline-block mb-2">
-                      <span className="text-xs font-semibold text-[#FFD700] bg-[#FFD700] bg-opacity-10 px-3 py-1 rounded-full border border-[#FFD700] border-opacity-30">
-                        {person.category}
-                      </span>
-                    </div>
-                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#FFD700] transition-colors duration-300">
-                      {person.name}
-                    </h3>
-                    <h4 className="text-lg font-semibold text-[#FFD700] mb-3">
-                      {person.achievement}
-                    </h4>
-                    <p className="text-gray-300 leading-relaxed text-sm">
-                      {person.description}
-                    </p>
+                {/* Content */}
+                <div>
+                  <div className="inline-block mb-2 lg:mb-3">
+                    <span className="text-[10px] lg:text-xs font-bold text-[#FFC527] bg-[#FFC527]/10 px-2 lg:px-3 py-1 rounded-full border border-[#FFC527]/30">
+                      {person.category}
+                    </span>
                   </div>
+                  
+                  <h3 className="text-sm sm:text-base lg:text-2xl font-black text-white mb-1 lg:mb-2 group-hover:text-[#FFC527] transition-colors duration-300 line-clamp-2">
+                    {person.name}
+                  </h3>
+                  
+                  <h4 className="text-xs sm:text-sm lg:text-lg font-bold text-[#FFC527]/90 mb-2 lg:mb-3 line-clamp-2">
+                    {person.achievement}
+                  </h4>
+                  
+                  <p className="text-[10px] sm:text-xs lg:text-sm text-gray-300 leading-relaxed line-clamp-3 lg:line-clamp-4">
+                    {person.description}
+                  </p>
                 </div>
 
                 {/* Bottom accent line */}
-                <div className="mt-6 h-1 w-0 group-hover:w-full bg-gradient-to-r from-[#FFD700] to-transparent transition-all duration-700 rounded-full"></div>
+                <div className="mt-4 lg:mt-6 h-0.5 lg:h-1 w-0 group-hover:w-full bg-gradient-to-r from-[#FFC527] to-transparent transition-all duration-700 rounded-full" />
               </div>
 
               {/* Shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-10 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-100%] group-hover:translate-x-[100%] transition-all duration-1000" />
+              
+              {/* Pattern overlay */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500" style={{
+                backgroundImage: `radial-gradient(circle at 50% 50%, transparent 20%, rgba(255,197,39,0.2) 21%, rgba(255,197,39,0.2) 30%, transparent 31%)`,
+                backgroundSize: '40px 40px'
+              }} />
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
-        {/* <div className="text-center mt-20 bg-gradient-to-r from-[#1a2744] via-[#0f1d35] to-[#1a2744] rounded-2xl p-12 border border-[#FFD700] border-opacity-20">
-          <h3 className="text-3xl font-bold text-white mb-4">
+        {/* Bottom CTA Section - Commented out as in original */}
+        {/* <div className="text-center mt-16 lg:mt-24 bg-gradient-to-r from-[#0c1e3d]/50 via-[#1a2f4d]/50 to-[#0c1e3d]/50 backdrop-blur-xl rounded-2xl lg:rounded-3xl p-8 lg:p-16 border-2 border-[#FFC527]/20">
+          <h3 className="text-2xl lg:text-4xl font-black text-white mb-4 lg:mb-6">
             Know Someone Extraordinary?
           </h3>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-base lg:text-xl text-gray-300 mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed">
             Nominate an individual whose achievements deserve recognition and inspire others to excellence
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#0a1628] font-bold rounded-full hover:shadow-lg hover:shadow-[#FFD700]/50 transform hover:scale-105 transition-all duration-300">
+          <button className="px-8 lg:px-10 py-4 lg:py-5 bg-gradient-to-r from-[#FFC527] to-[#ffb700] text-[#0c1e3d] font-black text-base lg:text-xl rounded-full hover:from-[#ffb700] hover:to-[#FFC527] shadow-2xl shadow-[#FFC527]/30 hover:shadow-[0_0_40px_rgba(255,197,39,0.5)] transform hover:scale-105 transition-all duration-500">
             Submit Nomination
           </button>
         </div> */}
       </div>
 
       <style jsx>{`
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
+        .line-clamp-3 {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
+        .line-clamp-4 {
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
         @keyframes pulse {
-          0%, 100% { opacity: 0.05; }
-          50% { opacity: 0.1; }
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.5; }
         }
+        
         .animate-pulse {
-          animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        .delay-1000 {
-          animation-delay: 2s;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
       `}</style>
     </div>
