@@ -39,11 +39,11 @@ const Navbar = () => {
       path: '/our-department',
       hasDropdown: true,
       submenu: [
-        { name: 'Our History', path: '/our-department/history' },
-        { name: 'Past Leadership', path: '/our-department/leadership' },
-        { name: 'Our Mission', path: '/our-department/mission' },
-        { name: "HOD's Roll of Honour", path: '/our-department/hod-honour' },
-        { name: 'Departmental History Museum Gallery', path: '/our-department/museum' },
+        { name: 'Our History', path: '/our-department' },
+        { name: 'Past Leadership', path: '/our-department' },
+        { name: 'Our Mission', path: '/our-department' },
+        { name: "HOD's Roll of Honour", path: '/our-department' },
+        { name: 'Departmental History Museum Gallery', path: '/our-department' },
       ]
     },
     {
@@ -85,11 +85,11 @@ const Navbar = () => {
         { name: 'Publications', path: '/research/publications' },
       ]
     },
-    {
-      name: 'Spotlight',
-      path: '/spotlight',
-      hasDropdown: false
-    },
+    // {
+    //   name: 'Spotlight',
+    //   path: '/spotlight',
+    //   hasDropdown: false
+    // },
   ];
 
   return (

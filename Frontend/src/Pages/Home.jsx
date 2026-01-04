@@ -3,6 +3,7 @@ import Hero from './Hero'
 import GettingStarted from './GettingStarted'
 import FeaturedPub from './FeautredPub'
 import NewsHome from './NewsHome'
+import Spotlight from './Spotlight'
 const Home = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Home = () => {
       <GettingStarted/>
       <FeaturedPub/>
       <NewsHome/>
+      <Spotlight/>
     </div>
   )
 }
