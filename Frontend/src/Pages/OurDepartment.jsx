@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom"; // Essential for detecting the #hash
 import "../CSS/OurDepartment.css";
 import avatar from "/avatar.jpg";
 import { leaders } from "../Components/leadersData";
 import TimelineItem from "../Components/TimelineItem";
 
+
 const OurDepartment = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      // Small timeout ensures the DOM has rendered before trying to scroll
+      setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          // Calculate navbar height (e.g., 80px) to avoid overlapping
+          const yOffset = -100;
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, [hash]); // Runs every time the #hash in the URL changes
+
   return (
     <div className="department-container bg-[#121212] text-white py-20">
       {/* Containerized History Section */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 mb-32">
+      <section id="history" className="max-w-6xl mx-auto px-6 md:px-12 mb-32 scroll-mt-24">
         <h1 className="text-7xl mb-10 font-bold tracking-tighter">
           Our History
         </h1>
@@ -30,7 +50,7 @@ const OurDepartment = () => {
       </section>
 
       {/* Past Leadership - Vertical Alternating Timeline */}
-      <section className="relative">
+      <section id="leadership" className="relative scroll-mt-24">
         <h2 className="section-title text-5xl font-medium mb-16 text-center">
           Past Leadership
         </h2>
@@ -50,6 +70,10 @@ const OurDepartment = () => {
           </div>
         </div>
       </section>
+      {/* <section id="mission" className="min-h-screen"><h2>Our Mission</h2></section>
+      <section id="honour" className="min-h-screen"><h2>Roll of Honour</h2></section>
+      <section id="gallery" className="min-h-screen"><h2>Departmental Gallery</h2></section>
+    </div> */}
     </div>
   );
 };
